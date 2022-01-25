@@ -62,8 +62,18 @@ function employeesObject(employee) {
 }
 
 function loopThroughEmployees() {
+  $( '#listOfEmployees' ).empty();
   for (let i of employees) {
-    console.log(employeesObject(i));
+    let listObject = employeesObject(i);
+    console.log(listObject);
+    $( '#listOfEmployees' ).append(`
+        <li>
+            <h1>${listObject.name}</h1>
+            <p>Bonus Percentage: ${listObject.bonusPercentage}</p>
+            <p>Total Compensation: $${listObject.totalCompensation}</p>
+            <p>Total Bonus: $${listObject.totalBonus}</p>
+        </li>
+    `);
   }
 }
 
