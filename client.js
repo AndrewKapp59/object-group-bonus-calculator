@@ -1,4 +1,8 @@
-$(Document).
+$( document ).ready( ready );
+
+function ready() {
+    $( '#button' ).on('click', loopThroughEmployees);
+}
 
 const employees = [
   {
@@ -63,7 +67,7 @@ function loopThroughEmployees() {
   }
 }
 
-loopThroughEmployees()
+// loopThroughEmployees()
 
 function calculateBonus( employee ) {
   let bonus;
