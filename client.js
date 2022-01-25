@@ -67,7 +67,7 @@ function loopThroughEmployees() {
     let listObject = employeesObject(i);
     console.log(listObject);
     $( '#listOfEmployees' ).append(`
-        <li>
+        <li class="bonusItem" >
             <h1>${listObject.name}</h1>
             <p>Bonus Percentage: ${listObject.bonusPercentage}</p>
             <p>Total Compensation: $${listObject.totalCompensation}</p>

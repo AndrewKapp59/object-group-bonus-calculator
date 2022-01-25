@@ -1,5 +1,40 @@
 body {
-  background-image: url("https://t3.ftcdn.net/jpg/00/74/04/66/360_F_74046684_nfxl9VtPQwuTAqahg59AclumPaSVCtQp.jpg");
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+	background-image: url("https://t3.ftcdn.net/jpg/00/74/04/66/360_F_74046684_nfxl9VtPQwuTAqahg59AclumPaSVCtQp.jpg");
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+#pageTitle {
+	text-align: center;
+}
+
+#buttonParent {
+	width: max-content;
+	margin: auto;
+}
+
+#listOfEmployees {
+	padding: 0rem;
+}
+
+.bonusItem {
+	width: max-content;
+	margin: 1rem auto 1rem auto;
+	background-color: cornflowerblue;
+	color: white;
+	padding: 1rem;
+	border-radius: 1rem;
+	transition: all 0.2s;
+}
+
+.bonusItem:hover {
+	box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.bonusItem::marker {
+	content: "";
+}
+
+.bonusItem h1 {
+	text-align: center;
+}
