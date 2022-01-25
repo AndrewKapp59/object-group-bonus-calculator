@@ -40,3 +40,48 @@ const employees = [
 // Ask questions when you don't.
 
 console.log( employees );
+
+function loopThroughEmployees(array) {
+  for (let employee of array) {
+    let bonus = calculateBonus(employee);
+    let { name, employeeNumber, annualSalary } = employee;
+    let interSalary = Number(annualSalary) * bonus;
+    let bonusMoney = bonus * 
+
+    let employeeObject = {
+      name: name,
+      bonusPercentage: bonus * 100 + '%',
+      totalCompensation: Number(annualSalary) * bonus + Number(annualSalary),
+      totalBonus: ,
+    };
+  }
+}
+
+function calculateBonus( employee ) {
+  let bonus;
+
+  let employeeSalary = Number(employee.annualSalary);
+
+  if (employee.reviewRating <= 2) {
+    bonus = 0;
+  }
+  else if (employee.reviewRating === 3) {
+    bonus = 0.04;
+  }
+  else if (employee.reviewRating === 4) {
+    bonus = 0.06;
+  }
+  else if (employee.reviewRating === 5) {
+    bonus = 0.10;
+  }
+  if (employee.employeeNumber.length === 4) {
+    bonus += 0.05;
+  }
+  if (employeeSalary > 65000) {
+    bonus -= 0.01;
+  }
+
+  return bonus < 0 ? 0 : bonus > .16 ? .16 : bonus;
+}
+
+console.log(employees[0], calculateBonus(employees[0]));
