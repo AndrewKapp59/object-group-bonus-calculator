@@ -49,7 +49,7 @@ function employeesObject(employee) {
   let employeeObject = {
     name: employee.name,
     bonusPercentage: parseInt(bonus * 100) + '%',
-    totalCompensation: parseInt(numberSalary),
+    totalCompensation: parseInt(numberSalary) + bonusMoney,
     totalBonus: parseInt(bonusMoney),
   };
   return employeeObject;
