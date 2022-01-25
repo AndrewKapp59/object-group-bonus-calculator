@@ -1,3 +1,5 @@
+$(Document).
+
 const employees = [
   {
     name: 'Atticus',
@@ -11,7 +13,7 @@ const employees = [
     annualSalary: '63500',
     reviewRating: 4
   },
-  {
+  { 
     name: 'Scout',
     employeeNumber: '6243',
     annualSalary: '74750',
