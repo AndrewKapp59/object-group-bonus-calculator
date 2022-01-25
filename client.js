@@ -41,20 +41,19 @@ const employees = [
 
 console.log( employees );
 
-function loopThroughEmployees(array) {
-  for (let employee of array) {
-    let bonus = calculateBonus(employee);
-    let { name, employeeNumber, annualSalary } = employee;
-    let interSalary = Number(annualSalary) * bonus;
-    let bonusMoney = bonus * 
+function loopThroughEmployees(employee) {
+  let bonus = calculateBonus(employee);
+  let { name, annualSalary } = employee;
+  let numberSalary = Number(annualSalary);
+  let bonusMoney = bonus * numberSalary;
 
-    let employeeObject = {
-      name: name,
-      bonusPercentage: bonus * 100 + '%',
-      totalCompensation: Number(annualSalary) * bonus + Number(annualSalary),
-      totalBonus: ,
-    };
-  }
+  let employeeObject = {
+    name: name,
+    bonusPercentage: bonus * 100 + '%',
+    totalCompensation: numberSalary,
+    totalBonus: bonusMoney,
+  };
+  return employeeObject;
 }
 
 function calculateBonus( employee ) {
